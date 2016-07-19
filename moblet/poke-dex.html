@@ -1,0 +1,12 @@
+<!-- is-loading="isLoading" init="init" inner-scroll="true" -->
+<m-moblet >
+  <m-content>
+    <ul class="list">
+     <li class="item item-icon-left" ng-repeat="(key, pokemon) in pokedex">
+       <img ng-src="{{pokeIcon(key, pokemon.name)}}">
+        {{pokemon.name}}
+        <span class="badge {{pokebadge(pokemon.type)}}">{{pokemon.type}}</span>
+     </li>
+    </ul>
+  </m-content>
+</m-moblet>
